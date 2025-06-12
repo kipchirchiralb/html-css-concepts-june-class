@@ -1,0 +1,94 @@
+/* Selectors in css - help in identifying elements to apply specific styles */
+
+/* 1. Element Type Selector - targeting elements using their tag names e.g. a , p, ul, li */
+
+p {
+  color: blue;
+}
+h2 {
+  font-style: italic;
+}
+/* This will select all <p> elements and apply blue color to their text */
+
+/* 2. Class Selector - targeting elements with a specific class using a dot (.) before the class name */
+.red-text {
+  color: red;
+  text-decoration: overline;
+}
+/* This will select all elements with the class "red-text" and apply red color to their text */
+
+/* 3. ID Selector - targeting elements with a specific ID using a hash (#) before the ID name */
+#unique-element {
+  background-color: yellow;
+}
+#rednote {
+  color: orange;
+}
+/* This will select the element with ID "unique-element" and apply a yellow background color */
+
+/* 4. Descendant Selector - targeting elements that are inside another element */
+div ul {
+  background-color: lightgreen;
+}
+/* This will select all <ul> elements that are inside a <div> and apply a light green background color */
+
+/* 5. Child Selector - targeting elements that are direct children of another element using the > symbol */
+header > a {
+  color: purple;
+  text-decoration: none;
+  font-size: 60px;
+}
+/* This will select all <a> elements that are direct children of a <header> and apply purple color with no underline */
+
+/* 6. Attribute Selector - targeting elements based on their attributes */
+input[type="email"] {
+  border: 2px solid blue;
+}
+/* This will select all <input> elements with type "text" and apply a blue border */
+/* 7. Pseudo-class Selector - targeting elements in a specific state */
+a:hover {
+  color: green;
+}
+/* This will select all <a> elements when hovered over and change their color to green */
+/* 8. Pseudo-element Selector - targeting a specific part of an element */
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}
+/* This will select the first letter of all <p> elements and make it larger and red */
+/* 9. Grouping Selector - applying the same styles to multiple selectors */
+h1,
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+  color: navy;
+}
+/* This will apply the same font family and color to all <h1>, <h2>, and <h3> elements */
+
+/* 10. Universal Selector - targeting all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* This will remove all default margin and padding from all elements in the document */
+
+/* 11. Adjacent Sibling Selector - targeting an element that is immediately preceded by another element */
+h2 + p {
+  margin-top: 20px;
+  color: darkblue;
+}
+
+/* This will select the first <p> element that comes immediately after an <h2> and apply a top margin and dark blue color */
+
+/* 12. General Sibling Selector - targeting all siblings of an element */
+h2 ~ p {
+  color: gray;
+  font-style: italic;
+}
+/* This will select all <p> elements that are siblings of an <h2> and apply gray color and italic font style */
+/* 13. Not Selector - excluding elements from a selection */
+p:not(.red-text) {
+  color: black;
+}
+/* This will select all <p> elements that do not have the class "red-text" and apply black color to their text */

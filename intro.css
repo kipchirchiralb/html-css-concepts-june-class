@@ -1,0 +1,27 @@
+/* 
+
+CSS Syntax
+
+selector {
+
+    property: value;
+    property: value;
+
+}
+
+*/
+
+/* css comment */
+
+html {
+  color: red;
+  background-color: cadetblue;
+  padding: 50px;
+  font-style: italic;
+}
+
+h2 {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
