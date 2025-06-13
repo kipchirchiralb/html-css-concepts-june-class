@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media files in html</title>
+    <link rel="shortcut icon" href="bullseys.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Media Files in HTML</h1>
+    <p>
+      HTML allows for including media files in a web page including images,
+      videos, download links, page links, icons, iframes, audio e.t.c
+    </p>
+
+    <h2>Images</h2>
+    <img src="" alt="image will be here" />
+    <!-- src attribute is used to specify the location of the image and alt attribute is used to specify the alternative text for the image which helps in accesibility, SEO and also helps in case the image is not loaded -->
+
+    <h2>Videos</h2>
+    <video controls>
+      <source src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- The controls attribute is used to add video controls like play, pause, volume, etc. The source element is used to specify the video file and its type. -->
+
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Icons ✊ 🚀</h2>
+    <!-- Emojis  -->
+    <!-- Icons can be sourced from font awesome, ion icons, material icons and other online liraries  -->
+    <!-- you can also use images as icons in a page - .png, jpg files -->
+    <img src="bullseys.png" alt="bullseys icon" />
+    <!-- A favicon is a small icon that appears in the browser's address bar and bookmarks. It is also refered to as a shortcut icon. We use a link element in the head with rel attribute and href(a path to the image/icon)  -->
+    <!-- SVG icons are also used in web development since they are editable.  -->
+    <h2>Iframes</h2>
+    <iframe
+      src="https://academy.eldohub.co.ke"
+      frameborder="0"
+      width="400px"
+      height="700px"
+    ></iframe>
+    <!-- Iframes are use to embed another html document in the current document  -->
+  </body>
+</html>
